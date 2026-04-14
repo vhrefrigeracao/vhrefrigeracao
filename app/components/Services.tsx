@@ -1,3 +1,6 @@
+"use client";
+
+import { trackEvent } from "@/lib/gtag";
 import Link from "next/link";
 import {
   FaSnowflake,
@@ -8,14 +11,6 @@ import {
 } from "react-icons/fa";
 
 export default function Services() {
-  function gtag(
-    arg0: string,
-    arg1: string,
-    arg2: { event_category: string; event_label: string }
-  ) {
-    throw new Error("Function not implemented.");
-  }
-
   return (
     <section className="services">
       <div className="services-container">
@@ -48,10 +43,7 @@ export default function Services() {
                   href="/servicos/manutencao-geladeira"
                   className="saiba-mais"
                   onClick={() => {
-                    gtag("event", "view_content", {
-                      event_category: "engagement",
-                      event_label: "manutencao_geladeira",
-                    });
+                    trackEvent("view_content", "manutencao_geladeira");
                   }}
                 >
                   Saiba mais
@@ -84,10 +76,7 @@ export default function Services() {
                   href="/servicos/ar-condicionado"
                   className="saiba-mais"
                   onClick={() => {
-                    gtag("event", "view_content", {
-                      event_category: "engagement",
-                      event_label: "ar_condicionado",
-                    });
+                    trackEvent("view_content", "ar_condicionado");
                   }}
                 >
                   Saiba mais
@@ -119,10 +108,7 @@ export default function Services() {
                   href="/servicos/manutencao-freezer"
                   className="saiba-mais"
                   onClick={() => {
-                    gtag("event", "view_content", {
-                      event_category: "engagement",
-                      event_label: "manutencao_freezer",
-                    });
+                    trackEvent("view_content", "manutencao_freezer");
                   }}
                 >
                   Saiba mais
@@ -154,10 +140,7 @@ export default function Services() {
                   href="/servicos/manutencao-maquina-de-lavar"
                   className="saiba-mais"
                   onClick={() => {
-                    gtag("event", "view_content", {
-                      event_category: "engagement",
-                      event_label: "maquina_lavar",
-                    });
+                    trackEvent("view_content", "maquina_de_lavar");
                   }}
                 >
                   Saiba mais

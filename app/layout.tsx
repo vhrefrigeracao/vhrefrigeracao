@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "técnico em refrigeração",
     "manutenção ar condicionado",
     "conserto freezer",
-    "conserto máquina de lavar",
+    "conserto máquina de lavar roupas",
     "VH refrigeração",
   ],
 
@@ -53,17 +53,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="pt-BR" className={poppins.variable}>
-      <head>
+      <body className="font-(--font-poppins) min-h-screen flex flex-col antialiased">
+        {/* Google Tag */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-16638047430"
           strategy="afterInteractive"
         />
-        <Script id="google-ads">
+
+        <Script id="google-ads" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -71,8 +73,7 @@ export default function RootLayout({
             gtag('config', 'AW-16638047430');
           `}
         </Script>
-      </head>
-      <body className="font-(--font-poppins) min-h-screen flex flex-col antialiased">
+
         <Header />
         {children}
         <Footer />
