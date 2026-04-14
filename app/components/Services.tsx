@@ -8,6 +8,14 @@ import {
 } from "react-icons/fa";
 
 export default function Services() {
+  function gtag(
+    arg0: string,
+    arg1: string,
+    arg2: { event_category: string; event_label: string }
+  ) {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <section className="services">
       <div className="services-container">
