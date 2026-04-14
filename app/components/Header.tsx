@@ -30,7 +30,12 @@ export default function Header() {
     <>
       <header className={`header ${showHeader ? "show" : "hide"}`}>
         <Link href="/" className="logo">
-          <Image src="/logo.png" width={80} height={80} alt="VH Refrigeração" />
+          <Image
+            src="/logo.webp"
+            width={80}
+            height={80}
+            alt="VH Refrigeração"
+          />
         </Link>
 
         <nav className="desktop-nav">

@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Depoimentos() {
   const depoimentos = [
@@ -57,6 +58,13 @@ export default function Depoimentos() {
             </SwiperSlide>
           ))}
         </Swiper>
+        <Link
+          href="https://g.page/r/CePKYSE15WIJEAE/review"
+          target="_blank"
+          className="cta-button"
+        >
+          Ver avaliações no Google
+        </Link>
       </div>
     </section>
   );

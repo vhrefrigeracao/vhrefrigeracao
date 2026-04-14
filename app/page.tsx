@@ -4,6 +4,7 @@ import CTAFinal from "./components/CTAFinal";
 import Depoimentos from "./components/Depoimentos";
 import Diferenciais from "./components/Diferencias";
 import FAQ from "./components/FAQ";
+import Galeria from "./components/Galeria";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Diferenciais />
       <ComoFunciona />
+      <Galeria />
       <Depoimentos />
       <CTAFinal />
       <ContactForm />

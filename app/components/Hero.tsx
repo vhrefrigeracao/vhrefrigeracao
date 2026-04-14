@@ -11,7 +11,7 @@ export default function Hero() {
       {/* IMAGEM DE FUNDO */}
       <div className="hero-bg">
         <Image
-          src="/hero-tecnico.png"
+          src="/hero-tecnico.webp"
           alt="Técnico em refrigeração"
           fill
           priority
