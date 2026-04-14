@@ -74,6 +74,16 @@ export default function RootLayout({
           `}
         </Script>
 
+        <Script id="google-ads">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'AW-16638047430');
+  `}
+        </Script>
+
         <Header />
         {children}
         <Footer />
