@@ -65,7 +65,7 @@ export default function Header() {
         <button className="close-btn" onClick={() => setMenuOpen(false)}>
           <FaTimes />
         </button>
-
+        <Link href="/">Inicio</Link>
         <Link href="/servicos/ar-condicionado">Ar Condicionado</Link>
         <Link href="/servicos/manutencao-freezer">Freezer</Link>
         <Link href="/servicos/manutencao-geladeira">Geladeira</Link>

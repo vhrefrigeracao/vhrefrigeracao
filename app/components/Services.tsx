@@ -39,6 +39,12 @@ export default function Services() {
                 <Link
                   href="/servicos/manutencao-geladeira"
                   className="saiba-mais"
+                  onClick={() => {
+                    gtag("event", "view_content", {
+                      event_category: "engagement",
+                      event_label: "manutencao_geladeira",
+                    });
+                  }}
                 >
                   Saiba mais
                 </Link>
@@ -66,7 +72,16 @@ export default function Services() {
                 <li>Recarga de gás</li>
               </ul>
               <div className="buttons">
-                <Link href="/servicos/ar-condicionado" className="saiba-mais">
+                <Link
+                  href="/servicos/ar-condicionado"
+                  className="saiba-mais"
+                  onClick={() => {
+                    gtag("event", "view_content", {
+                      event_category: "engagement",
+                      event_label: "ar_condicionado",
+                    });
+                  }}
+                >
                   Saiba mais
                 </Link>
                 <Link
@@ -95,6 +110,12 @@ export default function Services() {
                 <Link
                   href="/servicos/manutencao-freezer"
                   className="saiba-mais"
+                  onClick={() => {
+                    gtag("event", "view_content", {
+                      event_category: "engagement",
+                      event_label: "manutencao_freezer",
+                    });
+                  }}
                 >
                   Saiba mais
                 </Link>
@@ -124,6 +145,12 @@ export default function Services() {
                 <Link
                   href="/servicos/manutencao-maquina-de-lavar"
                   className="saiba-mais"
+                  onClick={() => {
+                    gtag("event", "view_content", {
+                      event_category: "engagement",
+                      event_label: "maquina_lavar",
+                    });
+                  }}
                 >
                   Saiba mais
                 </Link>

@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FloatWhatsapp from "./components/FloatWhatsapp";
 import CookieConsent from "./components/CookieConsent";
-
+import Script from "next/script";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -58,6 +58,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={poppins.variable}>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16638047430"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16638047430');
+          `}
+        </Script>
+      </head>
       <body className="font-(--font-poppins) min-h-screen flex flex-col antialiased">
         <Header />
         {children}
