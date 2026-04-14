@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
+import { reportConversion, trackFacebookLead } from "@/lib/gtag";
+
 export default function Hero() {
   return (
     <section className="hero" id="inicio">
@@ -41,6 +43,17 @@ export default function Hero() {
           target="_blank"
           rel="noopener noreferrer"
           className="cta-button"
+          onClick={e => {
+            e.preventDefault();
+
+            const url = e.currentTarget.href;
+
+            // Facebook
+            trackFacebookLead();
+
+            // Google Ads
+            reportConversion(url);
+          }}
         >
           Solicitar Atendimento
           <FaWhatsapp size={24} />

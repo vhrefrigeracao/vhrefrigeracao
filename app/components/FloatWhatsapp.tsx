@@ -1,3 +1,5 @@
+"use client";
+import { reportConversion, trackFacebookLead } from "@/lib/gtag";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -9,6 +11,17 @@ export default function FloatingWhatsapp() {
       rel="noopener noreferrer"
       className="floating-whatsapp"
       aria-label="Falar no WhatsApp"
+      onClick={e => {
+        e.preventDefault();
+
+        const url = e.currentTarget.href;
+
+        // Facebook
+        trackFacebookLead();
+
+        // Google Ads
+        reportConversion(url);
+      }}
     >
       <FaWhatsapp />
       <span>Solicitar Orçamento</span>

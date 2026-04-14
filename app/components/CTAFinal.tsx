@@ -1,3 +1,5 @@
+"use client";
+import { reportConversion, trackFacebookLead } from "@/lib/gtag";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -21,6 +23,17 @@ export default function CTAFinal() {
           href="https://wa.me/553198403605?text=Olá!%20Vi%20o%20site%20da%20VH%20Refrigeração%20e%20gostaria%20de%20solicitar%20um%20atendimento%20técnico/orçamento."
           target="_blank"
           className="cta-button"
+          onClick={e => {
+            e.preventDefault();
+
+            const url = e.currentTarget.href;
+
+            // Facebook
+            trackFacebookLead();
+
+            // Google Ads
+            reportConversion(url);
+          }}
         >
           Solicitar Atendimento Agora
           <FaWhatsapp />

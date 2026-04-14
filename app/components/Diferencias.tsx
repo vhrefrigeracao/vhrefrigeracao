@@ -1,3 +1,5 @@
+"use client";
+import { reportConversion, trackFacebookLead } from "@/lib/gtag";
 import Link from "next/link";
 import {
   FaClock,
@@ -52,6 +54,17 @@ export default function Diferenciais() {
           target="_blank"
           rel="noopener noreferrer"
           className="cta-button"
+          onClick={e => {
+            e.preventDefault();
+
+            const url = e.currentTarget.href;
+
+            // Facebook
+            trackFacebookLead();
+
+            // Google Ads
+            reportConversion(url);
+          }}
         >
           {" "}
           Solicitar Atendimento

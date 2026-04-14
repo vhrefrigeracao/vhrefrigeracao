@@ -1,5 +1,6 @@
 "use client";
 
+import { reportConversion, trackFacebookLead } from "@/lib/gtag";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -47,6 +48,17 @@ export default function DetalhesArCondicionado() {
         <Link
           href="https://wa.me/553198403605?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20manutenção%20de%20ar-condicionado."
           className="cta-button mx-auto"
+          onClick={e => {
+            e.preventDefault();
+
+            const url = e.currentTarget.href;
+
+            // Facebook
+            trackFacebookLead();
+
+            // Google Ads
+            reportConversion(url);
+          }}
         >
           Solicitar Orçamento Agora
           <FaWhatsapp />

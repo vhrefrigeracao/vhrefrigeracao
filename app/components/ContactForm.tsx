@@ -1,5 +1,6 @@
 "use client";
 
+import { reportConversion, trackFacebookLead } from "@/lib/gtag";
 import { useState } from "react";
 
 export default function ContactForm() {
@@ -28,10 +29,13 @@ export default function ContactForm() {
       `📍 Endereço: ${form.endereco}%0A` +
       `🔧 Serviço: ${form.servico}%0A` +
       `📝 Mensagem: ${form.mensagem}`;
-
     const url = `https://wa.me/553198403605?text=${encodeURIComponent(texto)}`;
 
-    window.open(url, "_blank");
+    // Facebook
+    trackFacebookLead();
+
+    // Google Ads
+    reportConversion(url);
   };
 
   return (
@@ -69,7 +73,14 @@ export default function ContactForm() {
             onChange={handleChange}
           />
 
-          <button onClick={enviarWhatsapp}>Enviar para WhatsApp</button>
+          <button
+            onClick={e => {
+              e.preventDefault();
+              enviarWhatsapp();
+            }}
+          >
+            Enviar para WhatsApp
+          </button>
         </div>
       </div>
     </section>

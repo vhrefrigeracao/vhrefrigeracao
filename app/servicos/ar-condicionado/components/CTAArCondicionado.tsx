@@ -1,5 +1,6 @@
 "use client";
 
+import { reportConversion, trackFacebookLead } from "@/lib/gtag";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -23,6 +24,17 @@ export default function CTAArCondicionado() {
         <Link
           href="https://wa.me/553198403605?text=Olá!%20Preciso%20de%20ajuda%20com%20meu%20ar-condicionado."
           className="cta-button"
+          onClick={e => {
+            e.preventDefault();
+
+            const url = e.currentTarget.href;
+
+            // Facebook
+            trackFacebookLead();
+
+            // Google Ads
+            reportConversion(url);
+          }}
         >
           Solicitar Atendimento Agora
           <FaWhatsapp />

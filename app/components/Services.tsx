@@ -1,6 +1,6 @@
 "use client";
 
-import { trackEvent } from "@/lib/gtag";
+import { reportConversion, trackEvent, trackFacebookLead } from "@/lib/gtag";
 import Link from "next/link";
 import {
   FaSnowflake,
@@ -9,7 +9,7 @@ import {
   FaBlender,
   FaWhatsapp,
 } from "react-icons/fa";
-
+import { trackFBEvent } from "@/lib/pixel";
 export default function Services() {
   return (
     <section className="services">
@@ -44,6 +44,7 @@ export default function Services() {
                   className="saiba-mais"
                   onClick={() => {
                     trackEvent("view_content", "manutencao_geladeira");
+                    trackFBEvent("ViewContent");
                   }}
                 >
                   Saiba mais
@@ -51,6 +52,17 @@ export default function Services() {
                 <Link
                   href="https://wa.me/553198403605?text=Olá!%20Vi%20no%20site%20que%20vocês%20realizam%20manutenção%20de%20geladeiras%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20conserto/manutenção%20da%20minha%20geladeira."
                   className="cta-button"
+                  onClick={e => {
+                    e.preventDefault();
+
+                    const url = e.currentTarget.href;
+
+                    // Facebook
+                    trackFacebookLead();
+
+                    // Google Ads
+                    reportConversion(url);
+                  }}
                 >
                   Chamar no Whatsapp <FaWhatsapp size={24} />
                 </Link>
@@ -77,6 +89,7 @@ export default function Services() {
                   className="saiba-mais"
                   onClick={() => {
                     trackEvent("view_content", "ar_condicionado");
+                    trackFBEvent("ViewContent");
                   }}
                 >
                   Saiba mais
@@ -84,6 +97,17 @@ export default function Services() {
                 <Link
                   href="https://wa.me/553198403605?text=Olá!%20Vi%20no%20site%20que%20vocês%20trabalham%20com%20manutenção%20de%20ar%20condicionado%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20atendimento%20técnico."
                   className="cta-button"
+                  onClick={e => {
+                    e.preventDefault();
+
+                    const url = e.currentTarget.href;
+
+                    // Facebook
+                    trackFacebookLead();
+
+                    // Google Ads
+                    reportConversion(url);
+                  }}
                 >
                   Chamar no Whatsapp <FaWhatsapp size={24} />
                 </Link>
@@ -109,6 +133,7 @@ export default function Services() {
                   className="saiba-mais"
                   onClick={() => {
                     trackEvent("view_content", "manutencao_freezer");
+                    trackFBEvent("ViewContent");
                   }}
                 >
                   Saiba mais
@@ -116,6 +141,17 @@ export default function Services() {
                 <Link
                   href="https://wa.me/553198403605?text=Olá!%20Vi%20no%20site%20que%20vocês%20fazem%20manutenção%20de%20freezers%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20atendimento%20técnico."
                   className="cta-button"
+                  onClick={e => {
+                    e.preventDefault();
+
+                    const url = e.currentTarget.href;
+
+                    // Facebook
+                    trackFacebookLead();
+
+                    // Google Ads
+                    reportConversion(url);
+                  }}
                 >
                   Chamar no Whatsapp <FaWhatsapp size={24} />
                 </Link>
@@ -141,6 +177,7 @@ export default function Services() {
                   className="saiba-mais"
                   onClick={() => {
                     trackEvent("view_content", "maquina_de_lavar");
+                    trackFBEvent("ViewContent");
                   }}
                 >
                   Saiba mais
@@ -148,6 +185,17 @@ export default function Services() {
                 <Link
                   href="https://wa.me/553198403605?text=Olá!%20Vi%20no%20site%20que%20vocês%20fazem%20manutenção%20de%20máquinas%20de%20lavar%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20atendimento%20técnico."
                   className="cta-button"
+                  onClick={e => {
+                    e.preventDefault();
+
+                    const url = e.currentTarget.href;
+
+                    // Facebook
+                    trackFacebookLead();
+
+                    // Google Ads
+                    reportConversion(url);
+                  }}
                 >
                   Chamar no Whatsapp <FaWhatsapp size={24} />
                 </Link>

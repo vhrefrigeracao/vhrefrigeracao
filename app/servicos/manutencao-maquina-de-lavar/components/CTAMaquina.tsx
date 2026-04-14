@@ -1,5 +1,6 @@
 "use client";
 
+import { reportConversion, trackFacebookLead } from "@/lib/gtag";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -23,6 +24,17 @@ export default function CTAMaquinaLavar() {
         <Link
           href="https://wa.me/553198403605?text=Olá!%20Minha%20máquina%20de%20lavar%20não%20está%20funcionando.%20Preciso%20de%20ajuda."
           className="cta-button"
+          onClick={e => {
+            e.preventDefault();
+
+            const url = e.currentTarget.href;
+
+            // Facebook
+            trackFacebookLead();
+
+            // Google Ads
+            reportConversion(url);
+          }}
         >
           Solicitar Atendimento Agora
           <FaWhatsapp />
