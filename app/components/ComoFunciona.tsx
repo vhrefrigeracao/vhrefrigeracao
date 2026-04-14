@@ -7,9 +7,7 @@ export default function ComoFunciona() {
       <div className="como-funciona-container">
         <span className="como-funciona-badge">Nosso Processo</span>
 
-        <h2 className="text-metallic-blue-dark">
-          Como Funciona Nosso Atendimento
-        </h2>
+        <h2>Como Funciona Nosso Atendimento</h2>
 
         <p className="como-funciona-subtitle">
           Um processo rápido, simples e eficiente para resolver seu problema com

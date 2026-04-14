@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const imagens = [
@@ -21,9 +22,7 @@ export default function Galeria() {
       <div className="galeria-container">
         <span className="galeria-badge">Nossos Trabalhos</span>
 
-        <h2 className="text-metallic-blue-dark">
-          Confira Alguns Serviços Realizados Pela Nossa Equipe
-        </h2>
+        <h2>Confira Alguns Serviços Realizados Pela Nossa Equipe</h2>
 
         <p className="galeria-subtitle">
           Veja na prática a qualidade dos nossos atendimentos.
@@ -64,7 +63,9 @@ export default function Galeria() {
           className="cta-button"
           href="https://wa.me/553198403605?text=Olá!%20Vi%20o%20site%20da%20VH%20Refrigeração%20e%20gostaria%20de%20solicitar%20um%20atendimento%20técnico/orçamento."
           target="_blank"
-        ></Link>
+        >
+          Solicitar orçamento <FaWhatsapp />
+        </Link>
       </div>
     </section>
   );

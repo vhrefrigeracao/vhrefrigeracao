@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="hero-content">
         <span className="hero-badge">Atendimento Rápido na Grande BH</span>
 
-        <h1 className="text-metallic-blue-dark">
+        <h1>
           Assistência Técnica em Geladeiras, Freezers, Ar Condicionado e
           Máquinas de Lavar
         </h1>

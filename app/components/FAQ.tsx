@@ -43,7 +43,7 @@ export default function FAQ() {
       <div className="faq-container">
         <span className="faq-badge">Perguntas Frequentes</span>
 
-        <h2 className="faq-title">Tire Suas Dúvidas Sobre Nosso Atendimento</h2>
+        <h2>Tire Suas Dúvidas Sobre Nosso Atendimento</h2>
 
         <p className="faq-subtitle">
           Respondemos às principais dúvidas dos nossos clientes para que você

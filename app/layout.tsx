@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FloatWhatsapp from "./components/FloatWhatsapp";
+import CookieConsent from "./components/CookieConsent";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     title: "VH Refrigeração",
     description:
       "Conserto de geladeiras, freezers, ar condicionado e máquinas de lavar com atendimento rápido e garantia.",
-    url: "https://seudominio.com.br",
+    url: "https://vhrefrigeracao.com.br",
     siteName: "VH Refrigeração",
     locale: "pt_BR",
     type: "website",
@@ -62,6 +63,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <FloatWhatsapp />
+        <CookieConsent />
       </body>
     </html>
   );

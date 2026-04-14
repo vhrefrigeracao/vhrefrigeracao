@@ -13,9 +13,7 @@ export default function Services() {
       <div className="services-container">
         <span className="services-badge">Nossos Serviços</span>
 
-        <h2 className="text-metallic-blue-dark">
-          Assistência Técnica Especializada em Refrigeração em BH
-        </h2>
+        <h2>Assistência Técnica Especializada em Refrigeração em BH</h2>
 
         <p className="services-subtitle">
           Trabalhamos com manutenção, instalação e conserto dos principais
@@ -30,7 +28,7 @@ export default function Services() {
             </div>
             <div className="service-content">
               {" "}
-              <h3 className="text-metallic-blue-dark">Geladeiras</h3>
+              <h3>Geladeiras</h3>
               <p>Conserto completo e manutenção preventiva.</p>
               <ul>
                 <li>Troca de peças</li>
@@ -60,7 +58,7 @@ export default function Services() {
             </div>
             <div className="service-content">
               {" "}
-              <h3 className="text-metallic-blue-dark">Ar Condicionado</h3>
+              <h3>Ar Condicionado</h3>
               <p>Instalação e manutenção especializada.</p>
               <ul>
                 <li>Limpeza técnica</li>
@@ -86,7 +84,7 @@ export default function Services() {
               <FaTint className="service-icon" />
             </div>
             <div className="service-content">
-              <h3 className="text-metallic-blue-dark">Freezers</h3>
+              <h3>Freezers</h3>
               <p>Reparo profissional para equipamentos comerciais.</p>
               <ul>
                 <li>Motor e compressor</li>
@@ -115,7 +113,7 @@ export default function Services() {
               <FaBlender className="service-icon" />
             </div>
             <div className="service-content">
-              <h3 className="text-metallic-blue-dark">Máquinas de Lavar</h3>
+              <h3>Máquinas de Lavar</h3>
               <p>Manutenção completa para sua lavadora.</p>
               <ul>
                 <li>Troca de bomba</li>

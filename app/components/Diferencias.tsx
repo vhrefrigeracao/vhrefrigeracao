@@ -13,9 +13,7 @@ export default function Diferenciais() {
       <div className="diferenciais-container">
         <span className="diferenciais-badge">Por que escolher a VH?</span>
 
-        <h2 className="text-metallic-blue-dark">
-          Atendimento Profissional com Qualidade e Confiança
-        </h2>
+        <h2>Atendimento Profissional com Qualidade e Confiança</h2>
 
         <p className="diferenciais-subtitle">
           Trabalhamos com excelência em cada atendimento, oferecendo rapidez,

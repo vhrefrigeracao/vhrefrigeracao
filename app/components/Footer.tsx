@@ -71,7 +71,10 @@ export default function Footer() {
             </p>
           </div>
         </div>
-
+        <div className="footer-links">
+          <Link href="/politica-de-privacidade">Política de Privacidade</Link>
+          <Link href="/termos-de-uso">Termos de Uso</Link>
+        </div>
         <div className="footer-bottom">
           <p>
             © {new Date().getFullYear()} VH Refrigeração. Todos os direitos

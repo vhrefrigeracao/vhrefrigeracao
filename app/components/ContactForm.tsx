@@ -37,7 +37,7 @@ export default function ContactForm() {
   return (
     <section className="contato">
       <div className="contato-container">
-        <h2 className="text-metallic-blue-dark">Solicite Seu Atendimento</h2>
+        <h2>Solicite Seu Atendimento</h2>
 
         <div className="form-grid">
           <input
