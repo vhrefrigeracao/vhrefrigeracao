@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const imagens = [
@@ -59,6 +60,11 @@ export default function Galeria() {
             ))}
           </Swiper>
         </div>
+        <Link
+          className="cta-button"
+          href="https://wa.me/553198403605?text=Olá!%20Vi%20o%20site%20da%20VH%20Refrigeração%20e%20gostaria%20de%20solicitar%20um%20atendimento%20técnico/orçamento."
+          target="_blank"
+        ></Link>
       </div>
     </section>
   );

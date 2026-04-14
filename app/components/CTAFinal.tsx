@@ -4,6 +4,8 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function CTAFinal() {
   return (
     <section className="cta-final">
+      <div className="cta-final-overlay"></div>
+
       <div className="cta-final-container">
         <span className="cta-final-badge">Fale Conosco Agora</span>
 
@@ -16,9 +18,9 @@ export default function CTAFinal() {
         </p>
 
         <Link
-          href="https://wa.me/553198403605"
+          href="https://wa.me/553198403605?text=Olá!%20Vi%20o%20site%20da%20VH%20Refrigeração%20e%20gostaria%20de%20solicitar%20um%20atendimento%20técnico/orçamento."
           target="_blank"
-          className="cta-final-button"
+          className="cta-button"
         >
           Solicitar Atendimento Agora
           <FaWhatsapp />

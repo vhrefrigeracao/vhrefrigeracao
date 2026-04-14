@@ -31,6 +31,7 @@ export default function Header() {
       <header className={`header ${showHeader ? "show" : "hide"}`}>
         <Link href="/" className="logo">
           <Image
+            loading="eager"
             src="/logo.webp"
             width={80}
             height={80}

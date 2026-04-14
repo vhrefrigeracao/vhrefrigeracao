@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import FloatWhatsapp from "./components/FloatWhatsapp";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -56,10 +57,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={poppins.variable}>
-      <body className="font-[var(--font-poppins)] min-h-screen flex flex-col antialiased">
+      <body className="font-(--font-poppins) min-h-screen flex flex-col antialiased">
         <Header />
         {children}
         <Footer />
+        <FloatWhatsapp />
       </body>
     </html>
   );
