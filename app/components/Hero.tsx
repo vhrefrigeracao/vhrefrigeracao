@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="inicio">
       {/* IMAGEM DE FUNDO */}
       <div className="hero-bg">
         <Image

@@ -1,10 +1,5 @@
 import Link from "next/link";
-import {
-  FaWhatsapp,
-  FaMapMarkerAlt,
-  FaEnvelope,
-  FaPhoneAlt,
-} from "react-icons/fa";
+import { FaWhatsapp, FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -48,15 +43,24 @@ export default function Footer() {
 
             <ul>
               <li>
-                <FaWhatsapp /> (31) 98403-0605
+                <FaWhatsapp />{" "}
+                <Link
+                  href="https://wa.me/553198403605?text=Olá!%20Vi%20o%20site%20da%20VH%20Refrigeração%20e%20gostaria%20de%20solicitar%20um%20atendimento%20técnico/orçamento."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  (31) 98403-0605
+                </Link>
               </li>
 
               <li>
-                <FaPhoneAlt /> (31) 98403-0605
-              </li>
-
-              <li>
-                <FaEnvelope /> contato@vhrefrigeracao.com
+                <FaInstagram />{" "}
+                <Link
+                  href="https://www.instagram.com/vh.refrigeracao"
+                  target="_blank"
+                >
+                  @vh.refrigeracao
+                </Link>
               </li>
             </ul>
           </div>

@@ -9,7 +9,7 @@ import {
 
 export default function Diferenciais() {
   return (
-    <section className="diferenciais">
+    <section className="diferenciais" id="diferenciais">
       <div className="diferenciais-container">
         <span className="diferenciais-badge">Por que escolher a VH?</span>
 

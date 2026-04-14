@@ -39,7 +39,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="faq">
+    <section className="faq" id="faq">
       <div className="faq-container">
         <span className="faq-badge">Perguntas Frequentes</span>
 

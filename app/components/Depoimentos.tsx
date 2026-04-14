@@ -40,7 +40,7 @@ const reviews = [
 
 export default function Depoimentos() {
   return (
-    <section className="reviews">
+    <section className="reviews" id="depoimentos">
       <div className="reviews-container">
         <span className="reviews-badge">Avaliações Reais</span>
 

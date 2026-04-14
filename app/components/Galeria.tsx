@@ -18,7 +18,7 @@ const imagens = [
 
 export default function Galeria() {
   return (
-    <section className="galeria">
+    <section className="galeria" id="galeria">
       <div className="galeria-container">
         <span className="galeria-badge">Nossos Trabalhos</span>
 

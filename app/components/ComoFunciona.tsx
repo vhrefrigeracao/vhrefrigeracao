@@ -3,7 +3,7 @@ import { FaWhatsapp, FaSearch, FaTools } from "react-icons/fa";
 
 export default function ComoFunciona() {
   return (
-    <section className="como-funciona">
+    <section className="como-funciona" id="comoFunciona">
       <div className="como-funciona-container">
         <span className="como-funciona-badge">Nosso Processo</span>
 

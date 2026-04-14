@@ -13,7 +13,7 @@ export default function Services() {
       <div className="services-container">
         <span className="services-badge">Nossos Serviços</span>
 
-        <h2>Assistência Técnica Especializada em Refrigeração em BH</h2>
+        <h2>Assistência Técnica Especializada em Refrigeração na Grande BH</h2>
 
         <p className="services-subtitle">
           Trabalhamos com manutenção, instalação e conserto dos principais

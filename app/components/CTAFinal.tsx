@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function CTAFinal() {
   return (
-    <section className="cta-final">
+    <section className="cta-final" id="contato">
       <div className="cta-final-overlay"></div>
 
       <div className="cta-final-container">
