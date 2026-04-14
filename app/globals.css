@@ -1439,6 +1439,24 @@ body {
   text-align: center;
   color: white;
 }
+.freezer-hero {
+  position: relative;
+  padding: 140px 20px;
+  background: url("/freezer-bg.webp");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+.maquina-hero {
+  position: relative;
+  padding: 140px 20px;
+  background: url("/maquina-bg.webp");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
 .service-hero-overlay {
   position: absolute;
   inset: 0;
@@ -1469,7 +1487,7 @@ body {
   gap: 30px;
   margin: 50px 0;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
   .service-benefits {
     display: flex;
     flex-direction: column;
