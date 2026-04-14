@@ -1430,7 +1430,15 @@ body {
   text-align: center;
   color: white;
 }
-
+.ar-hero {
+  position: relative;
+  padding: 140px 20px;
+  background: url("/arcondicionado-bg.webp");
+  background-size: cover;
+  background-position: center/top;
+  text-align: center;
+  color: white;
+}
 .service-hero-overlay {
   position: absolute;
   inset: 0;
