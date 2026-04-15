@@ -1,7 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { FaWhatsapp, FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaMapMarkerAlt,
+  FaInstagram,
+  FaFacebook,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -62,6 +67,15 @@ export default function Footer() {
                   target="_blank"
                 >
                   @vh.refrigeracao
+                </Link>
+              </li>
+              <li>
+                <FaFacebook />{" "}
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61573371376338"
+                  target="_blank"
+                >
+                  VH Refrigeração
                 </Link>
               </li>
             </ul>
