@@ -68,7 +68,7 @@ export default function ComoFunciona() {
             reportConversion(url);
           }}
         >
-          Chamar no Whatsapp <FaWhatsapp size={24} />
+          Solicitar Orçamento pelo WhatsApp <FaWhatsapp size={24} />
         </Link>
       </div>
     </section>

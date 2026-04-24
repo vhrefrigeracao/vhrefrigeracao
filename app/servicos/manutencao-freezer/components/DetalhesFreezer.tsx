@@ -60,7 +60,7 @@ export default function DetalhesFreezer() {
             reportConversion(url);
           }}
         >
-          Solicitar Orçamento Agora
+          Solicitar Orçamento pelo WhatsApp
           <FaWhatsapp />
         </Link>
       </div>

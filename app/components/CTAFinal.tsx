@@ -35,7 +35,7 @@ export default function CTAFinal() {
             reportConversion(url);
           }}
         >
-          Solicitar Atendimento Agora
+          Solicitar Orçamento pelo WhatsApp
           <FaWhatsapp />
         </Link>
 

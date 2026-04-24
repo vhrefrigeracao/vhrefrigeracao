@@ -34,7 +34,7 @@ export default function CTAGeladeira() {
             reportConversion(url);
           }}
         >
-          Solicitar Atendimento Agora
+          Solicitar Orçamento pelo WhatsApp
           <FaWhatsapp />
         </Link>
       </div>

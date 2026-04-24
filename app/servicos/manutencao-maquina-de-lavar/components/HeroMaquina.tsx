@@ -34,7 +34,7 @@ export default function HeroMaquinaLavar() {
             reportConversion(url);
           }}
         >
-          Solicitar Atendimento
+          Solicitar Orçamento pelo WhatsApp
           <FaWhatsapp />
         </Link>
       </div>

@@ -36,7 +36,7 @@ export default function CTAMaquinaLavar() {
             reportConversion(url);
           }}
         >
-          Solicitar Atendimento Agora
+          Solicitar Orçamento pelo WhatsApp
           <FaWhatsapp />
         </Link>
       </div>

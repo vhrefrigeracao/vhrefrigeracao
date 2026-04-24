@@ -27,14 +27,11 @@ export default function Hero() {
       <div className="hero-content">
         <span className="hero-badge">Atendimento Rápido na Grande BH</span>
 
-        <h1>
-          Assistência Técnica em Geladeiras, Freezers, Ar Condicionado e
-          Máquinas de Lavar
-        </h1>
+        <h1>Técnico de Refrigeração na Grande BH</h1>
 
         <p className="hero-description">
-          Especialistas em manutenção, instalação e conserto de equipamentos de
-          refrigeração residencial e comercial. Atendimento ágil, diagnóstico
+          Especialistas em instalação e manutenção, Geladeiras, Freezers, Ar
+          Condicionado e Máquinas de Lavar. Atendimento ágil, diagnóstico
           preciso e garantia de qualidade para sua tranquilidade.
         </p>
 
@@ -55,7 +52,7 @@ export default function Hero() {
             reportConversion(url);
           }}
         >
-          Solicitar Atendimento
+          Solicitar Orçamento pelo WhatsApp
           <FaWhatsapp size={24} />
         </Link>
       </div>

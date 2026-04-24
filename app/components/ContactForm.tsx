@@ -79,7 +79,7 @@ export default function ContactForm() {
               enviarWhatsapp();
             }}
           >
-            Enviar para WhatsApp
+            Solicitar Orçamento pelo WhatsApp
           </button>
         </div>
       </div>

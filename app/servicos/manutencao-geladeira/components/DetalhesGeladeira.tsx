@@ -58,7 +58,7 @@ export default function DetalhesGeladeira() {
             reportConversion(url);
           }}
         >
-          Solicitar Orçamento Agora
+          Solicitar Orçamento pelo WhatsApp
           <FaWhatsapp />
         </Link>
       </div>

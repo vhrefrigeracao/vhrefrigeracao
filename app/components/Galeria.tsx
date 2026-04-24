@@ -76,7 +76,7 @@ export default function Galeria() {
             reportConversion(url);
           }}
         >
-          Solicitar orçamento <FaWhatsapp />
+          Solicitar Orçamento pelo WhatsApp <FaWhatsapp />
         </Link>
       </div>
     </section>

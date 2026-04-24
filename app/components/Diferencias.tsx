@@ -67,7 +67,7 @@ export default function Diferenciais() {
           }}
         >
           {" "}
-          Solicitar Atendimento
+          Solicitar Orçamento pelo WhatsApp
           <FaWhatsapp size={24} />
         </Link>
       </div>

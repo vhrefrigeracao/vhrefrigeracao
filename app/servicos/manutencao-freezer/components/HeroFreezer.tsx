@@ -35,7 +35,7 @@ export default function HeroFreezer() {
             reportConversion(url);
           }}
         >
-          Solicitar Atendimento
+          Solicitar Orçamento pelo WhatsApp
           <FaWhatsapp />
         </Link>
       </div>

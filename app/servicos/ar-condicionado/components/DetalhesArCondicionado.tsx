@@ -60,7 +60,7 @@ export default function DetalhesArCondicionado() {
             reportConversion(url);
           }}
         >
-          Solicitar Orçamento Agora
+          Solicitar Orçamento pelo WhatsApp
           <FaWhatsapp />
         </Link>
       </div>

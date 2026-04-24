@@ -34,7 +34,7 @@ export default function HeroGeladeira() {
             reportConversion(url);
           }}
         >
-          Solicitar Atendimento
+          Solicitar Orçamento pelo WhatsApp
           <FaWhatsapp />
         </Link>
       </div>

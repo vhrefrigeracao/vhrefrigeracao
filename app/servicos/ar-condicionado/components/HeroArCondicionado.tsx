@@ -37,7 +37,7 @@ export default function HeroArCondicionado() {
             reportConversion(url);
           }}
         >
-          Solicitar Atendimento
+          Solicitar Orçamento pelo WhatsApp
           <FaWhatsapp />
         </Link>
       </div>
